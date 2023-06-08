@@ -1,0 +1,17 @@
+= KN03 Dokumentation - Tim
+
+//ssh ubuntu@<ip_of_instance> -i C:\Users\41754\.ssh\Tim1.pem -o ServerAliveInterval=30
+
+== A) Installation von Web- und Datenbankserver
+
+image::IMG/A/index_html.PNG[]
+
+image::IMG/A/info_php.PNG[]
+
+image::IMG/A/db_php.PNG[]
+
+
+
+== B) Auftrennung von Web- und Datenbankserver
+
+== C) Speicher
