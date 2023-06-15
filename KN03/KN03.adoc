@@ -10,8 +10,8 @@ image::IMG/A/info_php.PNG[]
 
 image::IMG/A/db_php.PNG[]
 
-
-
 == B) Auftrennung von Web- und Datenbankserver
+
+
 
 == C) Speicher
