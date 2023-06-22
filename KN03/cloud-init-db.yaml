@@ -12,16 +12,8 @@ ssh_pwauth: false
 disable_root: false
 package_update: true
 packages:
-  - curl
-  - wget
-  - apache2
-  - php
-  - libapache2-mod-php
   - mariadb-server
-  - php-mysqli
-write_files:
-  - git clone https://gitlab.com/ch-tbz-it/Stud/m346/m346scripts.git
 runcmd:
-  - mysql -sfu root -e "GRANT ALL ON *.* TO 'admin'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;"
-  - systemctl restart mariadb.service
-  - systemctl restart apache2
+  - sudo mysql -sfu root -e "GRANT ALL ON *.* TO 'admin'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;"
+  - sudo sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf
+  - sudo systemctl restart mariadb.service
