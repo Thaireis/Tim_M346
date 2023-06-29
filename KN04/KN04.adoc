@@ -1,0 +1,38 @@
+= KN04 Dokumentation - Tim
+
+//ssh ubuntu@<ip_of_instance> -i C:\Users\41754\.ssh\Tim1.pem -o ServerAliveInterval=30
+
+== A) Netzwerk und Sicherheit Einrichten
+
+image::IMG/created_subnet.PNG[]
+
+ep1 = DB +
+ep2 = Web
+
+image::IMG/elastic_ip.PNG[]
+
+Inbound rules von der Web Security Group
+
+image::IMG/inbound_rule_web.PNG[]
+
+Inbound rules von der DB Security Group
+
+image::IMG/inbound_rule_db.PNG[]
+
+Erste Spalte ist die DB und die letzte der Webserver
+
+image::IMG/network1.PNG[]
+image::IMG/network2.PNG[]
+
+Webserver Instanz
+
+image::IMG/webserver_instance.PNG[]
+
+DBserver Instanz
+
+image::IMG/dbserver_instance.PNG[]
+
+image::IMG/html.PNG[]
+image::IMG/infophp.PNG[]
+image::IMG/dbphp.PNG[]
+image::IMG/adminer.PNG[]
