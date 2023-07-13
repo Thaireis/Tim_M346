@@ -1,0 +1,35 @@
+= KN05 Dokumentation - Tim
+
+== A) Installation App
+
+Es haben sich nur die Cloud-Init Files geändert.
+Wie KN04 habe ich Network Interface, Security Group und Elastic IP erstellt und es den neuen Instanzen zugewiesen.
+
+image::IMG/swagger.PNG[]
+
+image::IMG/api_call.PNG[]
+
+
+== B) Vertikale Skalierung
+
+vorher
+
+image::IMG/db_storage.PNG[]
+
+nachher
+
+image::IMG/db_storage_20gb.PNG[]
+
+vorher
+
+image::IMG/instancetype.PNG[]
+
+nachher
+
+image::IMG/instancetype_new.PNG[]
+
+== C) Horizontale Skalierung
+
+
+
+== D) Auto Scaling
